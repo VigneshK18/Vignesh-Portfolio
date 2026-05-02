@@ -1,6 +1,3 @@
-New-Item -ItemType Directory -Force .github\workflows | Out-Null
-
-@'
 name: Deploy Vite React app to GitHub Pages
 
 on:
@@ -58,4 +55,3 @@ jobs:
       - name: Deploy to GitHub Pages
         id: deployment
         uses: actions/deploy-pages@v4
-'@ | Set-Content -Encoding UTF8 .github\workflows\deploy.yml
